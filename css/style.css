@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+}
+
+.container {
+    width: 50%;
+    margin: 25vh auto;
+}
+
+.tem {
+    display: grid;
+    grid-template-rows: 250px 40px; 
+    align-items: center;
+    text-align: center;
+}
+
+.clock {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    color: wheat;
+    grid-gap: 30px;
+    font-size: 70px;
+}
+
+.clock div {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20%;
+}
+
+@media screen and (max-width: 770px) {
+    .clock {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .clock {
+    font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tem {
+        display: grid;
+        grid-template-rows: 150px 30px; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .clock {
+    font-size: 30px;
+    }
+
+    .clock div {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+    }
+}
